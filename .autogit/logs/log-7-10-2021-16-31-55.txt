@@ -1,0 +1,15 @@
+-------------------- Auto-Git Log --------------------
+		Sun Nov 07 2021 16:31:55 GMT+0300 (Arabian Standard Time)
+------------------------------------------------------
+
+Modified files:
+* "Project/SageMaker Project 01.ipynb"
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
