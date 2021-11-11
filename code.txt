@@ -1,0 +1,30 @@
+# TODO: Convert test_review into a form usable by the model and save the results in test_data
+test_words = review_to_words(test_review)
+
+test_words
+
+len(test_words)
+
+converted_review, converted_review_len = convert_and_pad_data(word_dict, test_words)
+
+converted_review
+
+converted_review_len
+
+
+converted_review.shape
+
+test_data = [pd.concat([pd.DataFrame(converted_review), pd.DataFrame(converted_review_len)], axis=1)]
+
+test_data
+
+
+
+
+test_X, test_X_len = convert_and_pad_data(word_dict, test_X)
+test_X = pd.concat([pd.DataFrame(test_X_len), pd.DataFrame(test_X)], axis=1)
+predictions = predict(test_X.values)
+predictions = [round(num) for num in predictions]
+
+
+
